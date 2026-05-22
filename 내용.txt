@@ -1,16 +1,10 @@
-1. 브랜치 생성
+####브랜치 생성####
 git clone 
 git branch 브랜치명
 git push -u origin 브랜치명
 
-<div id="container">
-        <div id="header-container"></div>
-		내용
-<div id="header-container"></div>
-</div>
 
-
-#css
+###css 추가###
 
 header > .gnb > li > img {
     position: absolute;
@@ -20,7 +14,6 @@ header > .gnb > li > img {
     z-index: 15;
 }
 
-#푸터
 footer {
     width: 100%;
     height: 120px;
