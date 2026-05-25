@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+    <link rel="stylesheet" href="./css/style.css"> <link rel="stylesheet" href="./css/farm.css"> 
+</head>
+<body>
+    <div id="container">
+    <div id="header-container"></div>
+        <div class="sub-banner">
+    <img src="./images/sub_top_bg.jpg" alt="서브 배너">
+</div>
+    <main class="content-wrapper">
+        
+        <aside class="sidebar">
+            <div class="sidebar-title">
+                <span>Crop Talk</span>
+                <h2>농작물이야기</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="./story.html">농작물이야기</a></li>
+                <li><a href="./gardening.html">텃밭가꾸기</a></li>
+                <li><a href="./school.html">귀농학교</a></li>
+            </ul>
+        </aside>
+
+        <section class="main-content">
+            <div class="content-header">
+                <h3>농작물이야기</h3>
+                <p class="breadcrumb">🏠 HOME &gt; 농작물이야기 &gt; <span>농작물이야기</span></p>
+            </div>
+            <div class="content-body">
+                <p>게시판 목록/글쓰기/글보기/글수정 화면 출력(커뮤니티 참고)</p>
+            </div>
+        </section>
+
+    </main>
+    <div id="footer-container"></div>
+</div>
+
+
+   <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+
+
+</body>
+</html>
