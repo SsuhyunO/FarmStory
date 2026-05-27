@@ -106,8 +106,100 @@ main > div:nth-child(4) {height: 186px;}
 main > div:nth-child(5) {height: 154px;}
 
 /* 슬라이더  */
+main > .slider {
+  position: relative;
+  height: 312px;
+  overflow: hidden;
+}
+
+main > .slider > img {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+main > .slider > .banner {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 230px;
+  height: 312px;
+  background-image: url("../images/main_banner_bg.jpg");
+}
+
+main > .slider > .banner > img:nth-child(1) {
+  float: right;
+  margin: 10px;
+}
+main > .slider > .banner > img:nth-child(2) {
+  margin-top: -20px;
+  margin-left: 10px;
+}
+main > .slider > .banner > img:nth-child(3) {
+  margin-left: 10px;
+}
+
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  background: #fff;
+}
 
 /* 장보기 배너 */
+
+main > .market {
+}
+
+main > .market > img {
+  margin: 10px 0;
+}
+
+main > .market > section {
+  width: 100%;
+  height: auto;
+  display: flex; /* Flex container로 설정 */
+  justify-content: space-between;
+}
+main > .market article {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-left: 4px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  text-align: center;
+}
+main > .market article:first-child {
+  margin-left: 0;
+}
+
+main > .market article:hover {
+  border: 1px solid #111;
+}
+
+main > .market article .thumbnail {
+  width: 120px;
+  height: auto;
+}
+main > .market article > h1 {
+  color: #777;
+  margin: 6px 0;
+}
+
+main > .market article .discount {
+  color: #eb000a;
+}
+main > .market article .discount::after {
+  content: "↓";
+}
+main > .market article .price {
+  margin: 6px 0;
+  font-weight: bold;
+}
+main > .market article .price::after {
+  content: "원";
+}
 
 /* 바로가기  */
 .quick {
